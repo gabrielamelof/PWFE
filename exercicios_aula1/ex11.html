@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+</head>
+<body>
+    <script>
+        let escolha1 = Number(prompt("Digite o número correspondente a escolha: 1 - Pedra // 2 - Papel // 3 - Tesoura"));
+        let escolha2 = Number(prompt("Digite o número correspondente a escolha: 1 - Pedra // 2 - Papel // 3 - Tesoura"));
+
+        if (escolha1 == 1 && escolha2 == 2){
+            document.write(`O jogador 2 ganhou <br>Pedra x Papel`) 
+        }
+        else if(escolha2 == 1 && escolha1 == 2){
+            document.write(`O jogador 1 ganhou <br>Papel x Pedra`) 
+        }
+        else if (escolha1 == 1 && escolha2 == 3){
+            document.write(`O jogador 1 ganhou <br>Pedra x Tesoura`) 
+        }
+        else if (escolha1 == 3 && escolha2 == 1){
+            document.write(`O jogador 2 ganhou <br>Pedra x Tesoura`) 
+        }
+        else if (escolha1 == 1 && escolha2 == 3){
+            document.write(`O jogador 1 ganhou <br>Pedra x Tesoura`) 
+        }
+        else if (escolha1 == 2 && escolha2 == 3){
+            document.write(`O jogador 2 ganhou <br>Papel x Tesoura`) 
+        }
+        else if (escolha1 == 3 && escolha2 == 2){
+            document.write(`O jogador 1 ganhou <br>Tesoura x Papel`) 
+        }
+        else if (escolha1 == 1 && escolha2 == 1){
+            document.write(`Empate! Os dois jogadores escolheram pedra`) 
+        }
+        else if (escolha1 == 2 && escolha2 == 2){
+            document.write(`Empate! Os dois jogadores escolheram papel`) 
+        }
+        else if (escolha1 == 3 && escolha2 == 3){
+            document.write(`Empate! Os dois jogadores escolheram tesoura`) 
+        }
+    </script>
+</body>
+</html>
