@@ -1,0 +1,45 @@
+<!-- Desenvolva um programa que leia a idade de 20 pessoas e apresente as idades acima da média.
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+ </head>
+ <body>
+    <h1>Exercício 3</h1>
+
+    <script>
+
+        let idades = []
+        let soma = 0
+
+        document.write(`Desenvolva um programa que leia a idade de 20 pessoas e apresente as idades acima da média.<p>`)
+
+            for(let i = 1; i < 21; i++){
+                let idade_usuario = Number(prompt("Digite a idade: "));
+                soma += idade_usuario
+                idades.push(idade_usuario)
+                
+            }
+            
+            document.write(`Idades: ${idades}, `)
+
+
+        
+            let media = soma / 5
+
+            document.write(`<p>Média das idades: ${media}<p>`)
+
+            for(let idade of idades){
+                if (idade > media){
+                    document.write(`<p>A idade ${idade} está acima da média <p>`)
+                }
+                    
+            }
+    </script>
+    
+ </body>
+ </html>

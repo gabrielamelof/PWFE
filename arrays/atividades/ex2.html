@@ -1,0 +1,33 @@
+<!-- . Desenvolva um programa que a partir de um vetor de inteiros com 8 valores inicializados na declaração 
+   apresente a média aritméticas desses valores.
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+ </head>
+ <body>
+    <h1>Exercício 2</h1>
+
+    <script>
+        let numeros = [5.6, 5.9, 5, 5, 6.7, 9.9, 5, 5]
+        let soma = 0
+
+        document.write(`Números: ${numeros} <p>`)
+
+        document.write(`Desenvolva um programa que a partir de um vetor de inteiros com 5 valores inicializados na declaração                      apresente o dobro de cada valor armazenado.<p>`)
+
+        for(let valor of numeros){
+            soma += valor
+        }
+
+        let media = soma / 8
+
+        document.write(`A média dos números é: ${media} <p>`)
+
+    </script>
+ </body>
+ </html>

@@ -1,0 +1,32 @@
+<!-- Desenvolva um programa que a partir de um vetor de inteiros com 5 valores inicializados na declaração 
+   apresente o dobro de cada valor armazenado.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <h1>Exercício 1</h1>
+    
+    <script>
+        document.write(`Desenvolva um programa que a partir de um vetor de inteiros com 5 valores inicializados na declaração 
+   apresente o dobro de cada valor armazenado.<p>`)
+
+        let numeros = [1, 2, 3, 4, 5]
+
+        document.write(`Números: ${numeros} <p>`)
+
+        let dobro = numeros.map(function(numero){
+            return numero * 2
+        })
+        document.write(`Dobro: ${dobro} <p>`)
+
+        
+    </script>
+    
+</body>
+</html>
