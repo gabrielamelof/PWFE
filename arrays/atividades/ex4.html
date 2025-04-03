@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+<body>
+    <h1>Exercício 3</h1>
+
+    <script>
+
+        let numeros = []
+        let bool = 0;
+
+        document.write(`Desenvolva um programa que leia 10 números inteiros e apresente os valores pares 
+        <p> Caso não tenha nenhum número par, apresente a mensagem "Todos os números são ímpares".<p>`)
+
+        for (let i  = 0; i < 10; i++){
+            let numero_usuario = Number(prompt(`Digite o número ${(i + 1)} : `));
+            numeros.push(numero_usuario)
+        }
+
+        // let numerosdiv2 = numeros.filter(function(pares){
+        //     return numeros % 2 === 0
+        // })
+
+        for(let par of numeros){
+            if(par % 2 == 0){
+                document.write(`<p>O número ${par} é par <p>`)
+                bool = 1;
+            }
+        }
+
+        if(bool == 0){
+            document.write(`<p>Nenhum dos números da array é par<p>`)
+        }
+            
+    </script>
+</body>
+</html>
