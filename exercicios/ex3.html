@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    <div>
+        <h1>String</h1>
+        <p>Pedir um nome e imprimir cada letra separadamente</p>
+        <input type="text" placeholder="Digite uma palavra" id="palavra">
+        <button onclick="separar()">Separar String</button>
+
+
+        <h1>String separada</h1>
+        <h2 id="separada"></h2>
+    </div>
+
+    <script>
+        function separar(str){
+            let palavra = document.getElementById("palavra").value
+            let palavra_separada = ""
+
+            for(let i = 0; i < palavra.length; i++){
+               palavra_separada += ` ${palavra[i]} `
+
+            }
+
+            // let palavra_invertida = palavra.split("").reverse().join()
+            document.getElementById("separada").innerHTML = `${palavra_separada}`;
+        }
+
+    </script>
+    
+</body>
+</html>
