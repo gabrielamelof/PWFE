@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+<body>
+    <div>
+        <h1>Carteira de motorista</h1>
+        <p>Pedir uma idade e dizer se a pessoa pode tirar carteira de motorista.</p>
+        <input type="number" placeholder="Digite a sua idade" id="idade">
+        <button onclick="maior_idade()">Conferir</button>
+
+
+        <h1>Carteira de Motorista</h1>
+        <h2 id="resposta"></h2>
+    </div>
+
+    <script>
+        function maior_idade(){
+            let idade = Number(document.getElementById("idade").value)
+
+            if (idade < 18){
+                document.getElementById("resposta").innerHTML = `Você ainda não pode tirar carteira de motorista`;
+            }
+            else{
+                document.getElementById("resposta").innerHTML = `Você pode tirar carteira de motorista`;
+            }
+
+        }
+
+    </script>
+</body>
+</html>
